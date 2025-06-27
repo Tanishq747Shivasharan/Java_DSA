@@ -18,10 +18,12 @@ public class GenericStringRev {
 
         String in = "Generics are cool";
 
-        List<Character> charList = new ArrayList<>();
-        for (char c : in.toCharArray()) {
-            charList.add(c);
+        Character[] charArray = new Character[in.length()];
+        for (int i = 0; i < in.length(); i++) {
+            charArray[i] = in.charAt(i);
         }
+
+
         reverseList(charList);
         StringBuilder reversed = new StringBuilder();
         for (char c : charList) {
