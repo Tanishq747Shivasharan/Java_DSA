@@ -10,15 +10,15 @@ public class GenericLinearSearch {
     }
 
     public static void exe() {
-        int[] nums = {10, 20, 30, 40, 50};
-        int aim = 30;
+        Integer[] nums = {10, 20, 30, 40, 50}; 
+        Integer aim = 30;
 
         boolean got = linearSearch(nums, aim);
 
-        String message = found
-            ? "Element " + searchValue + " found in the array."
-            : "Element " + searchValue + " not found in the array.";
-        
+        String message = got
+            ? "Element " + aim + " found in the array."
+            : "Element " + aim + " not found in the array.";
+
         System.out.println(message);
     }
 
