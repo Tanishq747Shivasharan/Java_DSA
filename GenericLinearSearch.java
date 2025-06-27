@@ -15,11 +15,11 @@ public class GenericLinearSearch {
 
         boolean got = linearSearch(nums, aim);
 
-        if (got) {
-            System.out.println("Element " + aim + " found in the array.");
-        } else {
-            System.out.println("Element " + aim + " not found in the array.");
-        }
+        String message = found
+            ? "Element " + searchValue + " found in the array."
+            : "Element " + searchValue + " not found in the array.";
+        
+        System.out.println(message);
     }
 
     public static void main(String[] args) {
